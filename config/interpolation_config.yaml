@@ -1,0 +1,37 @@
+lidar_interpolation_node:
+  ros__parameters:
+    lidar:
+      max_range: 1e308 # Maximum range filtering (meters)
+      min_range: 0.0    # Minimum range filtering (meters)
+      
+    range_image:
+      angular_resolution_x: 0.25  # Angular resolution in the X direction (degrees)
+      angular_resolution_y: 2.05  # Angular resolution in the Y direction (degrees)
+      max_angle_width: 360.0     # Maximum angular width of the range image (degrees)
+      max_angle_height: 180.0    # Maximum angular height of the range image (degrees)
+      min_angle_fov: 0.0      # Minimum angle for the field of view (degrees) [default is -90]
+      max_angle_fov: 360.0       # Maximum angle for the field of view (degrees) [default is +90]
+    
+    interpolation:
+      method: "linear"                   # Interpolation method (linear, nearest, bilateral, edgeAware, or spline)
+                                            # - "linear" uses bilinear interpolation to smoothly scale values.
+                                            # - "nearest" uses nearest neighbor interpolation for simpler, faster calculations.
+                                            # - "bilateral" uses bilateral interpolation for noise reduction while preserving edges.
+                                            # - "edgeAware" enhances edge preservation while interpolating, focusing on boundaries.
+                                            # - "spline" uses cubic spline interpolation for smooth transitions between points.
+
+      scale_factor_x: 1.0         # Scale factor for the point cloud enlargement
+      scale_factor_y: 1.0        # Scale factor for the point cloud enlargement
+      interpolation_max_var: 50.0             # Maximum allowed variance for filtering in the interpolation process
+      apply_variance_filter: false # Maximum allowed variance for filtering in the interpolation process
+      rotation_angle_x: 0.0      # Rotation angle around the X axis (degrees)
+      extrapolation_value: "NaN"    # Value to use when extrapolating outside the range (NaN by default)
+      sensor_translation: [0.0, 0.0, 0.0]  # Translation of the sensor (in 3D space)
+      
+    
+    topics:
+      lidar_topic: "velodyne_points"          # Input topic for lidar data
+      interpolated_point_cloud_topic: "interpolated_point_cloud"  # Output topic for the interpolated point cloud data
+    
+    processing:
+      filter_pc: false # Filter the interpolated point cloud with Statistical Outlier Removal

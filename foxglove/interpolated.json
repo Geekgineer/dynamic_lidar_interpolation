@@ -1,0 +1,186 @@
+{
+  "configById": {
+    "3D!4gsgv5j": {
+      "cameraState": {
+        "perspective": true,
+        "distance": 38.960374867744626,
+        "phi": 67.46711442478788,
+        "thetaOffset": 25.761347149812178,
+        "targetOffset": [
+          1.8352188599010242,
+          4.364158382353107,
+          1.6669287957634723e-16
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "targetOrientation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "fovy": 45,
+        "near": 0.5,
+        "far": 5000
+      },
+      "followMode": "follow-pose",
+      "followTf": "velodyne",
+      "scene": {},
+      "transforms": {},
+      "topics": {
+        "/fused/point_cloud": {
+          "visible": true,
+          "colorField": "z",
+          "colorMode": "colormap",
+          "colorMap": "turbo"
+        },
+        "/velodyne_points": {
+          "visible": false,
+          "colorField": "intensity",
+          "colorMode": "colormap",
+          "colorMap": "turbo"
+        },
+        "/interpolated_point_cloud": {
+          "visible": true,
+          "colorField": "z",
+          "colorMode": "colormap",
+          "colorMap": "turbo"
+        }
+      },
+      "layers": {
+        "grid": {
+          "visible": true,
+          "frameLocked": true,
+          "label": "Grid",
+          "instanceId": "7f30601a-1506-4cb0-a404-4ffd40ed5078",
+          "layerId": "foxglove.Grid",
+          "size": 10,
+          "divisions": 10,
+          "lineWidth": 1,
+          "color": "#248eff",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "publish": {
+        "type": "point",
+        "poseTopic": "/move_base_simple/goal",
+        "pointTopic": "/clicked_point",
+        "poseEstimateTopic": "/initialpose",
+        "poseEstimateXDeviation": 0.5,
+        "poseEstimateYDeviation": 0.5,
+        "poseEstimateThetaDeviation": 0.26179939
+      },
+      "imageMode": {}
+    },
+    "3D!1197tvw": {
+      "cameraState": {
+        "perspective": true,
+        "distance": 31.73346883211765,
+        "phi": 54.817041199266804,
+        "thetaOffset": 47.32021993282023,
+        "targetOffset": [
+          3.34593288758576,
+          0.9939602775673664,
+          -5.100227219819958e-16
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "targetOrientation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "fovy": 45,
+        "near": 0.5,
+        "far": 5000
+      },
+      "followMode": "follow-none",
+      "followTf": "velodyne",
+      "scene": {},
+      "transforms": {},
+      "topics": {
+        "/fused/point_cloud": {
+          "stixelsEnabled": false,
+          "visible": false,
+          "colorField": "z",
+          "colorMode": "colormap",
+          "colorMap": "turbo"
+        },
+        "/velodyne_points": {
+          "visible": true,
+          "colorField": "intensity",
+          "colorMode": "colormap",
+          "colorMap": "turbo"
+        },
+        "/fused/colored_point_cloud": {
+          "visible": true,
+          "colorField": "rgb",
+          "colorMode": "rgb",
+          "colorMap": "turbo"
+        }
+      },
+      "layers": {
+        "grid": {
+          "visible": true,
+          "frameLocked": true,
+          "label": "Grid",
+          "instanceId": "3bb63a49-b2e4-494e-a514-8c7dcead0a29",
+          "layerId": "foxglove.Grid",
+          "size": 10,
+          "divisions": 10,
+          "lineWidth": 1,
+          "color": "#248eff",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "publish": {
+        "type": "point",
+        "poseTopic": "/move_base_simple/goal",
+        "pointTopic": "/clicked_point",
+        "poseEstimateTopic": "/initialpose",
+        "poseEstimateXDeviation": 0.5,
+        "poseEstimateYDeviation": 0.5,
+        "poseEstimateThetaDeviation": 0.26179939
+      },
+      "imageMode": {}
+    }
+  },
+  "globalVariables": {
+    "globalVariable": 0
+  },
+  "userNodes": {},
+  "playbackConfig": {
+    "speed": 1
+  },
+  "layout": {
+    "direction": "row",
+    "first": "3D!4gsgv5j",
+    "second": "3D!1197tvw",
+    "splitPercentage": 48.828125
+  }
+}
