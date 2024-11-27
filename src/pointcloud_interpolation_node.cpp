@@ -9,8 +9,8 @@
  * Updated to handle dynamic parameter updates, maintain flexibility and responsiveness,
  * and ensure optimal performance through pre-allocation and thread safety.
  *
- * Original Author: Abdalrahman M. Amer
- * Updated by: [Your Name]
+ * @linkedin https://www.linkedin.com/in/abdalrahman-m-amer
+ * @github https://github.com/geekgineer
  *
  * @license AGPL-3.0
  *
