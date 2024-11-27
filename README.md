@@ -7,7 +7,10 @@ ROS2 Real-time **3D LiDAR point cloud interpolation** package in C++, featuring:
 - **Optimized Performance**: Fast and efficient.  
 - **Full Control**: Precision interpolation.  
 
-Watch demo: [video]
+Watch demo: [video](https://youtu.be/3y5KldDH-Cc)
+
+
+![demo](img/demo.gif)
 
 # 🛠️ **Key Capabilities**
 
@@ -29,7 +32,7 @@ Watch demo: [video]
    Built in C++ for real-time processing with ROS2 compatibility.
 
 5. **Cross-Platform**  
-   Lightweight core ensures compatibility across different OS and platforms.
+   Core interpolation is ROS2 independent pure C++, PCL and Eigen implementation ensures compatibility across different OS and platforms.
 
 6. **Customizable**  
    Supports real-time parameter adjustments for adaptable applications.
@@ -165,6 +168,86 @@ ros2 launch dynamic_lidar_interpolation pointcloud_interpolation_launch.py log_l
 This project is licensed under the Affero General Public License (AGPL) version 3.0.
 
 ---
+
+## Acknowledgment of Related Work
+
+This project builds upon and is inspired by several foundational works in LiDAR data interpolation and augmentation. The following references have been instrumental in guiding the methodologies and approaches adopted:
+
+1. Velasco-Sánchez, E., de Loyola Páez-Ubieta, I., Candelas, F. A., & Puente, S. T. (2023).  
+   *LiDAR data augmentation by interpolation on spherical range image.*  
+   Proceedings of the 2023 IEEE 28th International Conference on Emerging Technologies and Factory Automation (ETFA), pp. 1–4. IEEE.  
+   [Link to Paper](https://ieeexplore.ieee.org/document/10275512)
+   ```bibtex
+   @inproceedings{velasco2023lidar,
+     title={LiDAR data augmentation by interpolation on spherical range image},
+     author={Velasco-S{\'a}nchez, Edison and de Loyola P{\'a}ez-Ubieta, Ignacio and Candelas, Francisco A and Puente, Santiago T},
+     booktitle={2023 IEEE 28th International Conference on Emerging Technologies and Factory Automation (ETFA)},
+     pages={1--4},
+     year={2023},
+     organization={IEEE}
+   }
+   ```
+
+3. Xia, O., Zhao, L., & Zhou, Q. (2022).  
+   *PolarMix: A General Data Augmentation Technique for LiDAR Point Clouds.*  
+   arXiv preprint arXiv:2208.00223.  
+   [Link to Paper](https://arxiv.org/abs/2208.00223)  
+   ```bibtex
+   @article{xia2022polarmix,
+     title={PolarMix: A General Data Augmentation Technique for LiDAR Point Clouds},
+     author={Xia, O. and Zhao, L. and Zhou, Q.},
+     journal={arXiv preprint arXiv:2208.00223},
+     year={2022},
+     url={https://arxiv.org/abs/2208.00223}
+   }
+   ```
+
+2. Shepard, D. (1968).
+   A Two-Dimensional Interpolation Function for Irregularly-Spaced Data.
+   Proceedings of the 1968 ACM National Conference, pp. 517–524. ACM.
+   ```bibtex
+   @inproceedings{shepard1968twodimensional,
+   title={A Two-Dimensional Interpolation Function for Irregularly-Spaced Data},
+   author={Shepard, Donald},
+   booktitle={Proceedings of the 1968 ACM National Conference},
+   pages={517--524},
+   year={1968},
+   organization={ACM}
+   }
+   ```
+
+3. Multiquadric Equations of Topography and Other Irregular Surfaces.
+Journal of Geophysical Research, 76(8), pp. 1905–1915.
+
+   ```bibtex
+
+   @article{hardy1971multiquadric,
+   title={Multiquadric Equations of Topography and Other Irregular Surfaces},
+   author={Hardy, Ronald L.},
+   journal={Journal of Geophysical Research},
+   volume={76},
+   number={8},
+   pages={1905--1915},
+   year={1971}
+   }
+   ```
+
+4. Sibson, R. (1981).
+A Brief Description of Natural Neighbor Interpolation.
+In Interpolating Multivariate Data, pp. 21–36. John Wiley & Sons.
+
+   ```bibtex
+
+   @inbook{sibson1981natural,
+   title={A Brief Description of Natural Neighbor Interpolation},
+   author={Sibson, Richard},
+   booktitle={Interpolating Multivariate Data},
+   pages={21--36},
+   publisher={John Wiley \\& Sons},
+   year={1981}
+   }
+   ```
+
 
 ## 👤 Author
 
