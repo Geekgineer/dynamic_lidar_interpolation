@@ -234,8 +234,8 @@ namespace pointcloud_interpolation
                     densePointCloud->points.emplace_back(point);
                 }
             }
-            densePointCloud->width = static_cast<uint32_t>(densePointCloud->points.size());
-            densePointCloud->height = 1;
+            densePointCloud->width = interpolatedRange.cols();
+            densePointCloud->height = interpolatedRange.rows();
             densePointCloud->is_dense = false;
 
             // Step 6: Apply Rotation Transformation if Needed
