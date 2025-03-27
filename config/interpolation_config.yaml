@@ -1,4 +1,4 @@
-lidar_interpolation_node:
+pointcloud_interpolation_node:
   ros__parameters:
     lidar:
       max_range: 1e308 # Maximum range filtering (meters)
